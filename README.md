@@ -1,16 +1,87 @@
-# React + Vite
+# 🧮 React Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and interactive calculator built using React that performs basic arithmetic operations such as addition, subtraction, multiplication, and division.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Live Demo
 
-## React Compiler
+https://calculator-crio.netlify.app/
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Single input field to display expressions
+* Supports operations: **+ , - , * , /**
+* Follows **BODMAS rule** for calculations
+* Displays result dynamically on the UI
+* Clear button (`C`) resets input and result
+* Handles edge cases:
+
+  * `0/0 → NaN`
+  * `1/0 → Infinity`
+  * Empty input with `=` → Error
+
+---
+
+## 🛠️ Tech Stack
+
+* React (Vite)
+* JavaScript (ES6+)
+* CSS
+
+---
+
+## 📂 Project Setup
+
+Run the project locally:
+
+```bash id="6ds1o3"
+# Clone repository
+git clone <your-repo-link>
+
+# Navigate to project folder
+cd react-calculator
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+---
+
+## ⚙️ How It Works
+
+1. User clicks on number and operator buttons
+2. The input field updates with the expression
+3. Clicking `=` evaluates the expression
+4. Result is displayed below the input
+5. Clicking `C` clears both input and result
+
+---
+
+## ⚠️ Important Notes
+
+* All buttons are created using the `<button>` element
+* Only one `<input>` field is used
+* Only one `<div>` is used to display the result
+* Expression evaluation is handled using JavaScript `eval()`
+
+---
+
+## 📦 Build for Production
+
+```bash id="qnl5r2"
+npm run build
+```
+
+---
+
+## 🙌 Acknowledgements
+
+* Crio.Do for the project idea
+
+---
